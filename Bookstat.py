@@ -7,13 +7,13 @@
 
 import argparse # For entering arguments in functions
 import time # For elapsed time
-import string #  For the function string.ascii
-import numpy #For array of letters count
+import string # For the function string.ascii
+import numpy # For array of letters count
 
 
 # Global variables
-T_0 = time.time() #The beginning of the time
-N = 26 #Numbers of letters
+T_0 = time.time() # The beginning of the time
+N = 26 # Numbers of letters
 
 
 def parsefile(text, start, finish, histo, stats, helping):
@@ -133,7 +133,6 @@ def process(file_path, start, finish, histo, stats, helping):
     print(f'Opening input file {file_path}...')
     with open(file_path, 'r', encoding="utf-8") as text:
         text = text.read().lower()
-        print(text)
     parsefile(text, start, finish, histo, stats, helping)
     print('Done.')
 
